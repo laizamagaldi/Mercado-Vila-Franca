@@ -12,15 +12,18 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import Entidade.Cliente;
+import Entidade.Telefone;
 import Hibernate.ClienteDAO;
+import Hibernate.TelefoneDAO;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 /**
  *
  * @author Giovana Freitas
  */
-public class cadastroCliente extends HttpServlet {
+public class CadastroCliente extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -47,6 +50,8 @@ public class cadastroCliente extends HttpServlet {
             String DataNasc = request.getParameter("DataNasc");
             String Orgao_exp = request.getParameter("OrgaoExp");
             String Data_exp = request.getParameter("DataExp");
+            String Numero = request.getParameter("telefone1");
+            String DDD = request.getParameter("telefone2");
             
             ClienteDAO clieDAO = new ClienteDAO();
             Cliente cliente = new Cliente();
@@ -58,7 +63,7 @@ public class cadastroCliente extends HttpServlet {
             cliente.setSexo(sexo);
             cliente.setLogin(login);
             cliente.setOrgao_exp(Orgao_exp);
-            
+        
             SimpleDateFormat format =new SimpleDateFormat("dd/MM/yyyy");
             Date data_nascimento = null;
             try{
@@ -80,11 +85,28 @@ public class cadastroCliente extends HttpServlet {
             cliente.setData_exp(data_exp);
                     
             clieDAO.addCliente(cliente);
-            response.sendRedirect("Cadastro.jsp");
+            
+            Telefone tel = new Telefone();
+            String hashFone = (Numero+DDD).hashCode()+"";
+            tel.setCod_tel(hashFone);
+            System.out.println("CODIGODOTELEFONE: " + tel.getCod_tel());
+            tel.setNumero(Long.parseLong(Numero));
+            tel.setDDD(Integer.parseInt(DDD));
+            tel.setIdentificacao("fixo");
+            tel.setCliente(cliente);
+            
+            TelefoneDAO tdao = new TelefoneDAO();
+            tdao.addTelefone(tel);
+            
+            response.sendRedirect("CadastroRealizado.jsp");
             
         } finally {
             out.close();
         }
+        
+       
+        
+        
         
     }
 
