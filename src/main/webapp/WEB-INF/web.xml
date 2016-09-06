@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
     <servlet>
-        <servlet-name>cadastroCliente</servlet-name>
-        <servlet-class>Servlet.cadastroCliente</servlet-class>
+        <servlet-name>CadastroCliente</servlet-name>
+        <servlet-class>Servlet.CadastroCliente</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>Login</servlet-name>
@@ -10,11 +10,11 @@
     </servlet>
     <servlet>
         <servlet-name>logout</servlet-name>
-        <servlet-class>Servlet.logout</servlet-class>
+        <servlet-class>Servlet.Logout</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>cadastroCliente</servlet-name>
-        <url-pattern>/cadastroCliente</url-pattern>
+        <servlet-name>CadastroCliente</servlet-name>
+        <url-pattern>/CadastroCliente</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
@@ -24,6 +24,9 @@
         <servlet-name>logout</servlet-name>
         <url-pattern>/logout</url-pattern>
     </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
     <session-config>
         <session-timeout>
             30
