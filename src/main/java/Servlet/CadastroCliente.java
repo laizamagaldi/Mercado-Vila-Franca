@@ -17,12 +17,11 @@ import Entidade.Endereco;
 import Hibernate.ClienteDAO;
 import Hibernate.TelefoneDAO;
 import Hibernate.EnderecoDAO;
-import Hibernate.ClienteDAO;
-import Hibernate.TelefoneDAO;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.UUID;
 /**
  *
  * @author Giovana Freitas
@@ -56,7 +55,6 @@ public class CadastroCliente extends HttpServlet {
             String Data_exp = request.getParameter("DataExp");
             String Numero = request.getParameter("telefone1");
             String DDD = request.getParameter("telefone2");
-
             String Rua = request.getParameter("ruaCliente");
             String Numero_end = request.getParameter("numeroCliente");
             String Complemento = request.getParameter("complementoCliente");
@@ -111,17 +109,16 @@ public class CadastroCliente extends HttpServlet {
             TelefoneDAO tdao = new TelefoneDAO();
             tdao.addTelefone(tel);
             
-
             clieDAO.addCliente(cliente);
             
             Endereco end = new Endereco();
             
-            String hashFone = (Numero+DDD).hashCode()+"";
-            end.setCodigo_end(hashFone);
+            String hashEnd = UUID.randomUUID().toString();
+            end.setCodigo_end(hashEnd);
             System.out.println("CODIGODOENDERECO: " + end.getCodigo_end());
             
             end.setNumero_end(Integer.parseInt(Numero_end));
-            end.setIdentificacao("Identificacao");
+            end.setIdentificacao("Residencial");
             end.setCliente(cliente);
             end.setComplemento(Complemento);
             end.setBairro(Bairro);
@@ -133,7 +130,9 @@ public class CadastroCliente extends HttpServlet {
             edao.addEndereco(end);
             
             response.sendRedirect("CadastroRealizado.jsp");
-            response.sendRedirect("CadastroRealizado.jsp");
+            
+            
+            
         } finally {
             out.close();
         }
