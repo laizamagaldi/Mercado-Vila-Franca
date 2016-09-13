@@ -65,21 +65,22 @@ public class ClienteDAO {
    * 
    * @return 
    */
-   public List listaCliente( ){
+   public List<Cliente> listaCliente( ){
       Session session = HibernateUtil.abrirSessaoComBD( );
       Transaction tx = null;
+       List<Cliente> clientes = null;
       try{
-         tx = session.beginTransaction();
-         List<Cliente> clientes = session.createQuery("FROM Cliente").list(); 
-         tx.commit();
-         return clientes;
+        clientes = session.createCriteria(Cliente.class).list(); 
+     
       }catch (HibernateException e) {
-         if (tx!=null) tx.rollback();
+         if (tx!=null){
+        tx.rollback();
+      }
          e.printStackTrace();
       }finally {
          session.close();
       }
-      return null;
+      return clientes;
    }     
    
    // Method to UPDATE salary for an employee 

@@ -13,15 +13,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import Entidade.Cliente;
 import Entidade.Telefone;
-<<<<<<< HEAD:src/main/java/Servlet/CadastroCliente.java
 import Entidade.Endereco;
 import Hibernate.ClienteDAO;
 import Hibernate.TelefoneDAO;
 import Hibernate.EnderecoDAO;
-=======
 import Hibernate.ClienteDAO;
 import Hibernate.TelefoneDAO;
->>>>>>> 7343ff0251d84612861fa13c27d47d93078db439:src/main/java/Servlet/CadastroCliente.java
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -59,7 +56,7 @@ public class CadastroCliente extends HttpServlet {
             String Data_exp = request.getParameter("DataExp");
             String Numero = request.getParameter("telefone1");
             String DDD = request.getParameter("telefone2");
-<<<<<<< HEAD:src/main/java/Servlet/CadastroCliente.java
+
             String Rua = request.getParameter("ruaCliente");
             String Numero_end = request.getParameter("numeroCliente");
             String Complemento = request.getParameter("complementoCliente");
@@ -68,8 +65,6 @@ public class CadastroCliente extends HttpServlet {
             String Estado = request.getParameter("estadoCliente");
             String Cep = request.getParameter("cepCliente");
            
-=======
->>>>>>> 7343ff0251d84612861fa13c27d47d93078db439:src/main/java/Servlet/CadastroCliente.java
             
             ClienteDAO clieDAO = new ClienteDAO();
             Cliente cliente = new Cliente();
@@ -116,7 +111,7 @@ public class CadastroCliente extends HttpServlet {
             TelefoneDAO tdao = new TelefoneDAO();
             tdao.addTelefone(tel);
             
-<<<<<<< HEAD:src/main/java/Servlet/CadastroCliente.java
+
             clieDAO.addCliente(cliente);
             
             Endereco end = new Endereco();
@@ -138,12 +133,7 @@ public class CadastroCliente extends HttpServlet {
             edao.addEndereco(end);
             
             response.sendRedirect("CadastroRealizado.jsp");
-            
-            
-=======
             response.sendRedirect("CadastroRealizado.jsp");
->>>>>>> 7343ff0251d84612861fa13c27d47d93078db439:src/main/java/Servlet/CadastroCliente.java
-            
         } finally {
             out.close();
         }

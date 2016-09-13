@@ -22,8 +22,8 @@
             <nav id="nav">
                 <ul>
                     <li><a href="#"> Meu Carrinho </a></li>
-                    <li><a href="#">Produtos</a></li>
-                    <li><a href="#"> Alterar Conta </a></li>
+                    <li><a href="teste.jsp">Produtos</a></li>
+                    <li><a href="AtualizaUsuario.jsp">Alterar Conta</a></li>
                     <li><a href="index.jsp">Sair</a></li>
                 </ul>
             </nav>
