@@ -84,7 +84,7 @@ public class ClienteDAO {
    }     
    
    // Method to UPDATE salary for an employee 
-   public void updateCliente(Integer ClienteID, int salary ){
+   public void updateCliente(Integer ClienteID){
       Session session = HibernateUtil.abrirSessaoComBD( );
       Transaction tx = null;
       try{
@@ -106,9 +106,9 @@ public class ClienteDAO {
       Transaction tx = null;
       try{
          tx = session.beginTransaction();
-         Cliente employee =
+         Cliente cliente =
                    (Cliente)session.get(Cliente.class, ClienteID);
-         session.delete(employee);
+         session.delete(cliente);
          tx.commit();
       }catch (HibernateException e) {
          if (tx!=null) tx.rollback();

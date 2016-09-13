@@ -9,12 +9,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-/**
- *
- * @author aluno
- */
+
 @WebServlet(name = "Logout", urlPatterns = {"/Logout"})
-public class logout extends HttpServlet {
+public class Logout extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -29,6 +26,7 @@ public class logout extends HttpServlet {
             throws ServletException, IOException {
 
         HttpSession session = request.getSession(true);
+        session.removeAttribute("currentSessionUser");
         session.invalidate();
         response.sendRedirect("index.jsp");
     }
