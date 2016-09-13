@@ -46,7 +46,7 @@
                             <div class="container">
                                     <ul class="icons">
                                             <h4> 1- Dados do Cliente </h6>
-                                        <form action="cadastroCliente" method="post">
+                                        <form action="CadastroCliente" method="post">
 						<table>
 							<tr>
 								<td class="texto2">
@@ -152,12 +152,36 @@
 									 <input type="text" name="cidadeCliente"><br>
 								</td>
 							</tr>
+                                                        <tr>
+								<td class="texto2">
+									 Cep
+								</td>
+								<td>
+									 <input type="text" name="cepCliente"><br>
+								</td>
+							</tr>
 							<tr>
 								<td class="texto2">
 									 Estado
 								</td>
 								<td>
 									 <input type="text" name="estadoCliente"><br>
+								</td>
+							</tr>  
+                                                        <tr>
+								<td class="texto2">
+									 Telefone 1
+								</td>
+								<td>
+									 <input type="text" name="telefone1"><br>
+								</td>
+							</tr>  
+                                                        <tr>
+								<td class="texto2">
+									 DDD
+								</td>
+								<td>
+									 <input type="text" name="telefone2"><br>
 								</td>
 							</tr>  
                                                 </table>
@@ -191,7 +215,8 @@
                                                 </table>    
 					</ul>
                                 <div class="botaocadastro">
-                                    <input type="submit" value="Cadastrar"/>
+                                    <input type="submit"  value="Cadastrar"/>
+                                    
 				</div>
                                     </form>
                             </div>
