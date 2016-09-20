@@ -101,7 +101,7 @@ public class ClienteDAO {
       }
    }
    /* Method to DELETE an employee from the records */
-<<<<<<< HEAD
+
    /*public void deleteCliente(Integer ClienteID){
 =======
    public void deleteCliente(String login){
