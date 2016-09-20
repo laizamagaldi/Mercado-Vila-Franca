@@ -52,7 +52,7 @@ public class DeletaCliente extends HttpServlet {
             clientedao.deleteCliente(login);
             
             List<Cliente> clientes = clientedao.listaCliente();
-            request.getSession(true).setAttribute("clientes," clientes);
+            request.getSession(true).setAttribute("clientes", clientes);
             response.sendRedirect("teste_lista.jsp");
             
         } finally {

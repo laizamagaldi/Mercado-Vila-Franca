@@ -64,11 +64,11 @@ public class Endereco implements Serializable {
         this.rua = rua;
     }
 
-    public int getNumero() {
+    public int getNumero_end() {
         return numero;
     }
 
-    public void setNumero(int numero) {
+    public void setNumero_end(int numero) {
         this.numero = numero;
     }
     
