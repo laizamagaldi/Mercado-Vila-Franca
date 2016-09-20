@@ -101,13 +101,13 @@ public class ClienteDAO {
       }
    }
    /* Method to DELETE an employee from the records */
-   public void deleteCliente(Integer ClienteID){
+   public void deleteCliente(String login){
       Session session = HibernateUtil.abrirSessaoComBD( );
       Transaction tx = null;
       try{
          tx = session.beginTransaction();
          Cliente cliente =
-                   (Cliente)session.get(Cliente.class, ClienteID);
+                   (Cliente)session.get(Cliente.class, login);
          session.delete(cliente);
          tx.commit();
       }catch (HibernateException e) {

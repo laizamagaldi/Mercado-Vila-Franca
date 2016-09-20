@@ -6,6 +6,7 @@
 package Hibernate;
 
 import Entidade.Cliente;
+import Entidade.Endereco;
 import Entidade.Telefone;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -27,6 +28,7 @@ public class HibernateUtil {
             factory = new AnnotationConfiguration().configure()
                     .addAnnotatedClass(Cliente.class)
                     .addAnnotatedClass(Telefone.class)
+                    .addAnnotatedClass(Endereco.class)
                     .buildSessionFactory();
         } catch (Throwable ex) {
             System.err.println("Falha ao criar sessionFactory. " + ex);

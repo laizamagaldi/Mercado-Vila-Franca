@@ -215,7 +215,7 @@
                                                 </table>    
 					</ul>
                                 <div class="botaocadastro">
-                                    <input type="submit"  value="Cadastrar"/>
+                                    <input type="submit" value="Cadastrar"/>
                                     
 				</div>
                                     </form>

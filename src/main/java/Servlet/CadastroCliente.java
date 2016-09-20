@@ -74,7 +74,6 @@ public class CadastroCliente extends HttpServlet {
             cliente.setSexo(sexo);
             cliente.setLogin(login);
             cliente.setOrgao_exp(Orgao_exp);
-        
             SimpleDateFormat format =new SimpleDateFormat("dd/MM/yyyy");
             Date data_nascimento = null;
             try{
@@ -84,8 +83,6 @@ public class CadastroCliente extends HttpServlet {
                 System.err.println("Escreve direito");
             }
             cliente.setDataNasc(data_nascimento);
-            
-            
             Date data_exp = null;
             try{
                 data_exp = format.parse("DataExp");
@@ -94,29 +91,29 @@ public class CadastroCliente extends HttpServlet {
                 System.err.println("Escreve direito");
             }
             cliente.setData_exp(data_exp);
-                    
             clieDAO.addCliente(cliente);
             
             Telefone tel = new Telefone();
-            String hashFone = (Numero+DDD).hashCode()+"";
+            String hashFone = UUID.randomUUID().toString();
+            if (hashFone.length() > 20) {
+                hashFone = hashFone.substring(0, 19);
+            }
             tel.setCod_tel(hashFone);
             System.out.println("CODIGODOTELEFONE: " + tel.getCod_tel());
             tel.setNumero(Long.parseLong(Numero));
             tel.setDDD(Integer.parseInt(DDD));
             tel.setIdentificacao("fixo");
             tel.setCliente(cliente);
-            
             TelefoneDAO tdao = new TelefoneDAO();
             tdao.addTelefone(tel);
             
-            clieDAO.addCliente(cliente);
-            
             Endereco end = new Endereco();
-            
             String hashEnd = UUID.randomUUID().toString();
+            if (hashEnd.length() > 20) {
+                hashEnd = hashEnd.substring(0, 19);
+            }
             end.setCodigo_end(hashEnd);
             System.out.println("CODIGODOENDERECO: " + end.getCodigo_end());
-            
             end.setNumero_end(Integer.parseInt(Numero_end));
             end.setIdentificacao("Residencial");
             end.setCliente(cliente);
@@ -125,13 +122,10 @@ public class CadastroCliente extends HttpServlet {
             end.setCidade(Cidade);
             end.setEstado(Estado);
             end.setCep(Integer.parseInt(Cep));
-            
             EnderecoDAO edao = new EnderecoDAO();
             edao.addEndereco(end);
             
             response.sendRedirect("CadastroRealizado.jsp");
-            
-            
             
         } finally {
             out.close();

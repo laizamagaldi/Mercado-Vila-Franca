@@ -10,8 +10,8 @@
     <head>
         
         <title>Cliente Edita</title>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <meta name="description" content="" />
+       <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <!-- <meta name="description" content="" />
         <meta name="keywords" content="" />
         <script src="js/jquery.min.js"></script>
         <script src="js/skel.min.js"></script>
@@ -20,24 +20,26 @@
         <noscript>
         <link rel="stylesheet" href="css/skel.css" />
         <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/style-xlarge.css" />
+        <link rel="stylesheet" href="css/style-xlarge.css" />-->
     </head>
-    <body class="landing">
+    <body >
+        <p>Oiiii</p>
         <!-- Header -->
-        <header id="header" class="alt">
+       <!-- <header id="header" class="alt">
             <h1><strong><a href="index.jsp">Telefone</a></strong>  (22)2768-6262</h1>
             <nav id="nav">
                 <ul>
                     <!--<li><a href="#"> Meu Carrinho </a></li>
                     <li><a href="#">Produtos</a></li>
-                    <li><a href="#"> Alterar Conta </a></li>-->
+                    <li><a href="#"> Alterar Conta </a></li>
                     <li><a href="index.jsp">Sair</a></li>
-                </ul>
+                    class="landing" -->
+        <!--        </ul>
             </nav>
         </header>
 
         <!-- Banner -->
-        <section id="banner">
+        <!--<section id="banner">
             <h2>Mercado Vila Franca</h2>
         </section>
         
@@ -142,6 +144,6 @@
                                              <div class="botaocadastro">
                                                 <input type="submit"  value="Atualizar"/>
                                             </div>
-                                    </form>
+                                    </form>-->
     </body>
 </html>
