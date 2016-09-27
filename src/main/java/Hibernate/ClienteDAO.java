@@ -84,7 +84,7 @@ public class ClienteDAO {
    }     
    
    // Method to UPDATE salary for an employee 
-   public void updateCliente(Integer ClienteID){
+   public void atualizarCliente(Integer ClienteID){
       Session session = HibernateUtil.abrirSessaoComBD( );
       Transaction tx = null;
       try{

@@ -16,6 +16,10 @@
         <servlet-name>ListarUsuario</servlet-name>
         <servlet-class>Servlet.ListarUsuario</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>atualizarCliente</servlet-name>
+        <servlet-class>Servlet.atualizarCliente</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CadastroCliente</servlet-name>
         <url-pattern>/CadastroCliente</url-pattern>
@@ -34,6 +38,10 @@
     <servlet-mapping>
         <servlet-name>ListarUsuario</servlet-name>
         <url-pattern>/ListarUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>atualizarCliente</servlet-name>
+        <url-pattern>/atualizarCliente</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
