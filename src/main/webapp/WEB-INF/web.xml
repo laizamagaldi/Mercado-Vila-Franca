@@ -24,6 +24,10 @@
         <servlet-name>atualizarCliente</servlet-name>
         <servlet-class>Servlet.atualizarCliente</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>DeletaCliente</servlet-name>
+        <servlet-class>Servlet.DeletaCliente</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CadastroCliente</servlet-name>
         <url-pattern>/CadastroCliente</url-pattern>
@@ -50,6 +54,10 @@
     <servlet-mapping>
         <servlet-name>atualizarCliente</servlet-name>
         <url-pattern>/atualizarCliente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeletaCliente</servlet-name>
+        <url-pattern>/DeletaCliente</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

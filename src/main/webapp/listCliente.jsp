@@ -64,7 +64,7 @@
         <display:column property="senha" />
         <display:column property="email" />        
         <display:column title="Editar" href="CarregaCliente" paramId="email" paramProperty="email"><img src="edit.png"  title="Atualizar"/></display:column>
-        <display:column title="Deletar" href="DeletaCliente" paramId="email" paramProperty="email"><img src="delete.png" title="Apagar"/></display:column>
+        <display:column title="Deletar" href="DeletaCliente" paramId="login" paramProperty="login"><img src="delete.png" title="Apagar"/></display:column>
     </display:table>
 
        
