@@ -51,9 +51,9 @@
 							<tr>
 								<td class="texto2">
 									Nome
-								</td>
-								<td>
-									 <input type="text" name="nomeCliente">
+                                                                </td>
+                                                                <td>
+                                                                    <input type="text" name="nomeCliente">
 								</td>
 							</tr>
 							<tr>
@@ -61,7 +61,7 @@
 									Email
 								</td>
 								<td>
-									 <input type="email" name="emailCliente"><br>
+									 <input type="email" name="emailCliente">
 								</td>
 							</tr>
                                                         <tr>
@@ -69,7 +69,7 @@
 									Data de Nascimento
 								</td>
 								<td>
-                                                                    <input type="text" name="DataNasc"><br>
+                                                                    <input type="text" name="DataNasc">
 								</td>
 							</tr>
                                                         <tr>
@@ -77,7 +77,7 @@
 									CPF
 								</td>
 								<td>
-									 <input type="text" name="cpfCliente" maxlength="11"><br>
+									 <input type="text" name="cpfCliente" maxlength="11">
 								</td>
 							</tr>
 							<tr>
@@ -85,7 +85,7 @@
 									RG
 								</td>
 								<td>
-									 <input type="text" name="rgCliente" maxlength="9"><br>
+									 <input type="text" name="rgCliente" maxlength="9">
 								</td>
 							</tr>
                                                         <tr>
@@ -93,7 +93,7 @@
 									Orgao Expedidor
 								</td>
 								<td>
-                                                                    <input type="text" name="OrgaoExp"><br>
+                                                                    <input type="text" name="OrgaoExp">
 								</td>
 							</tr>
                                                         <tr>
@@ -101,7 +101,7 @@
 									Data de Expedição
 								</td>
 								<td>
-                                                                    <input type="text" name="DataExp"><br>
+                                                                    <input type="text" name="DataExp">
 								</td>
 							</tr>
 							<tr>
@@ -109,7 +109,7 @@
 									Sexo
 								</td>
 								<td>
-									 <input type="text" name="sexoCliente"><br>
+									 <input type="text" name="sexoCliente">
 								</td>
 							</tr>
 							<tr>
@@ -117,7 +117,7 @@
 									Rua
 								</td>
 								<td>
-									 <input type="text" name="ruaCliente"><br>
+									 <input type="text" name="ruaCliente">
 								</td>
 							</tr>
 							<tr>
@@ -125,7 +125,7 @@
 									Numero
 								</td>
 								<td>
-									 <input type="text" name="numeroCliente"><br>
+									 <input type="text" name="numeroCliente">
 								</td>
 							</tr>
 							<tr>
@@ -133,7 +133,7 @@
 									 Complemento
 								</td>
 								<td>
-									 <input type="text" name="complementoCliente"><br>
+									 <input type="text" name="complementoCliente">
 								</td>
 							</tr>
 							<tr>
@@ -141,7 +141,7 @@
 									Bairro
 								</td>
 								<td>
-									 <input type="text" name="bairroCliente"><br>
+									 <input type="text" name="bairroCliente">
 								</td>
 							</tr>
 							<tr>
@@ -149,7 +149,7 @@
 									 Cidade
 								</td>
 								<td>
-									 <input type="text" name="cidadeCliente"><br>
+									 <input type="text" name="cidadeCliente">
 								</td>
 							</tr>
                                                         <tr>
@@ -157,7 +157,7 @@
 									 Cep
 								</td>
 								<td>
-									 <input type="text" name="cepCliente"><br>
+									 <input type="text" name="cepCliente">
 								</td>
 							</tr>
 							<tr>
@@ -165,7 +165,7 @@
 									 Estado
 								</td>
 								<td>
-									 <input type="text" name="estadoCliente"><br>
+									 <input type="text" name="estadoCliente">
 								</td>
 							</tr>  
                                                         <tr>
@@ -173,7 +173,7 @@
 									 Telefone 1
 								</td>
 								<td>
-									 <input type="text" name="telefone1"><br>
+									 <input type="text" name="telefone1">
 								</td>
 							</tr>  
                                                         <tr>
@@ -181,7 +181,7 @@
 									 DDD
 								</td>
 								<td>
-									 <input type="text" name="telefone2"><br>
+									 <input type="text" name="telefone2">
 								</td>
 							</tr>  
                                                 </table>
@@ -193,7 +193,7 @@
 									Login
 								</td>
 								<td>
-									 <input type="text" name="loginCliente"><br>
+									 <input type="text" name="loginCliente">
 								</td>
 							</tr>
                                                         <tr>
@@ -201,15 +201,15 @@
 									Senha
 								</td>
 								<td>
-									 <input type="password" name="senhaCliente"><br>
-								</td>
+									 <input type="password" name="senhaCliente">
+                                                                </td>
 							</tr>
                                                         <tr>
 								<td class="texto2">
 									Repetir Senha
 								</td>
 								<td>
-									 <input type="password" name="repsenhaCliente"><br>
+									 <input type="password" name="repsenhaCliente">
 								</td>
 							</tr>
                                                 </table>    

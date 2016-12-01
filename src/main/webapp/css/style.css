@@ -508,6 +508,8 @@
 			.texto2
 			{
 				color:#000000;
+                                padding-top: 10px;
+                                
 			}
                        
 /* Icon */
@@ -735,6 +737,10 @@ fim{}
                             width:200px; 
                             padding: 0 1em;
                         }
+                        .login input[type="password"]{
+                             width:200px; 
+                            padding: 0 1em;
+                        }
                         
                         .botaocadastro input[type="submit"]{
                             width: 180px;
@@ -788,11 +794,12 @@ fim{}
 
 			ul.icons li {
 				display: inline-block;
-				padding: 0 1em 0 0;
+				padding: 0 0 0 0;
 			}
 
 				ul.icons li:last-child {
 					padding-right: 0;
+                                        
 				}
 
 				ul.icons li .icon:before {

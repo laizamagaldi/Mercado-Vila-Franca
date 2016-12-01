@@ -39,13 +39,15 @@
                 <ul>
                     <li><a href="#"> Meu Carrinho </a></li>
                     <li><a href="teste.jsp">Produtos</a></li>
-                    <li><a href="AtualizaUsuario.jsp">Alterar Conta</a></li>
-                    <li><a href="index.jsp">Sair</a></li>
+                    <li><a href="AtualizaCliente.jsp">Alterar Conta</a></li>
+                    <li><a href="ListarUsuario">Lista Conta</a></li>
+
                     
                     
                     
                     
-                    <form action="Logout" method="post"> <input type="submit" name="button little" value="Sair"/>
+                    
+                    <li><form action="Logout" method="post"> <input type="submit" name="button little" value="Sair"/></li>
                     <!--<li><a href="index.jsp">Sair</a></li>-->
                     </form>
                 </ul>

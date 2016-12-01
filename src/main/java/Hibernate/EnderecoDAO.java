@@ -85,18 +85,29 @@ public class EnderecoDAO {
    }     
    
    // Method to UPDATE salary for an employee 
-   public void updateEndereco(Integer EnderecoID ){
+   public void atualizaEndereco(String /* Integer EnderecoID */ codigoID, String codigo_end, String rua, String complemento, String bairro, String cidade, String estado){
       Session session = HibernateUtil.abrirSessaoComBD( );
       Transaction tx = null;
       try{
          tx = session.beginTransaction();
-         Endereco employee =
-                    (Endereco)session.get(Endereco.class, EnderecoID);
-		 session.update(employee);
+         Endereco endereco =
+                    (Endereco)session.get(Endereco.class, codigo_end);
+         
+         endereco.setRua(rua);
+         //endereco.setNumero_end(numero);
+         endereco.setComplemento(complemento);
+         endereco.setBairro(bairro);
+         endereco.setCidade(cidade);
+         endereco.setEstado(estado);
+         //endereco.setCep(cep);
+         endereco.setCodigo_end(codigo_end);
+         
+		 session.update(endereco);
          tx.commit();
       }catch (HibernateException e) {
          if (tx!=null) tx.rollback();
          e.printStackTrace();
+         throw e;
 }finally {
          session.close();
       }

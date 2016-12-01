@@ -6,6 +6,7 @@
 package Hibernate;
 
 import Entidade.Cliente;
+import Entidade.Telefone;
 import java.util.List;
 import java.util.Date;
 import java.util.Iterator;
@@ -83,19 +84,27 @@ public class ClienteDAO {
       return clientes;
    }     
    
-   // Method to UPDATE salary for an employee 
-   public void atualizarCliente(Integer ClienteID){
+   public void atualizaCliente(String loginID, String email,
+            String login, String nome, String senha){
       Session session = HibernateUtil.abrirSessaoComBD( );
       Transaction tx = null;
       try{
          tx = session.beginTransaction();
-         Cliente employee =
-                    (Cliente)session.get(Cliente.class, ClienteID);
-		 session.update(employee);
+         Cliente cliente =
+                    (Cliente) session.get(Cliente.class, loginID);
+         
+         
+         cliente.setEmail(email);
+         cliente.setLogin(login);
+         cliente.setNome(nome);
+         cliente.setSenha(senha);
+         
+		 session.update(cliente);
          tx.commit();
       }catch (HibernateException e) {
          if (tx!=null) tx.rollback();
          e.printStackTrace();
+         throw e;
 }finally {
          session.close();
       }
@@ -117,6 +126,23 @@ public class ClienteDAO {
          session.close();
       }
    }
+
+    public Cliente recuperaCliente(String login) {
+        Session session = HibernateUtil.abrirSessaoComBD();
+        Cliente clientes = null;
+        try {
+             clientes = (Cliente) session
+                     .createQuery("from Cliente where login= :login")
+                     .setString("login", login).uniqueResult();
+                    
+           
+        } catch (HibernateException e) {
+            e.printStackTrace();
+        } finally {
+            session.close();
+        }
+        return clientes;
+    } 
    
 }
 

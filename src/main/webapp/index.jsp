@@ -56,7 +56,7 @@
                         <form action="Login" method="post">
                              <div class="login">
                                      Login: <input type="text" name="un" id="login"/>
-                                     Senha: <input type="text" name="pw" id="senha"/> 
+                                     Senha: <input type="password" name="pw" id="senha"/> 
                                      <br>
                                      <input type="submit" value="Entrar"/>
                                      <br> <br>
@@ -67,7 +67,7 @@
                         </form>
                     </header>
                     <div class="row 100%">
-                        <div>
+                        <div> 
                            <div class="bemvindo">
                                 <h6> Seja Bem Vindo! </h6>
                                 <h4> Busca: <input type="text" name="nome">

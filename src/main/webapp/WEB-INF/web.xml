@@ -13,6 +13,10 @@
         <servlet-class>Servlet.Logout</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>CarregaCliente</servlet-name>
+        <servlet-class>Servlet.CarregaCliente</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>ListarUsuario</servlet-name>
         <servlet-class>Servlet.ListarUsuario</servlet-class>
     </servlet>
@@ -38,6 +42,10 @@
     <servlet-mapping>
         <servlet-name>ListarUsuario</servlet-name>
         <url-pattern>/ListarUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CarregaCliente</servlet-name>
+        <url-pattern>/CarregaCliente</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>atualizarCliente</servlet-name>

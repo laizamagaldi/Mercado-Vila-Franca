@@ -109,4 +109,6 @@ public class Cliente  implements Serializable {
      public void setOpcao_adm(boolean opcao_adm) {
         this.opcaoAdm = opcao_adm;
     }
+
+   
 }
