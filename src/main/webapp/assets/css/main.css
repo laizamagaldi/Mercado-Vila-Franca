@@ -261,6 +261,7 @@
 
 	p {
 		margin: 0 0 2em 0;
+                
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -448,7 +449,7 @@
 		text-decoration: none;
 		text-transform: uppercase;
 		white-space: nowrap;
-
+             
 	}	
 	input[type="submit"],
 	input[type="reset"],
@@ -549,16 +550,28 @@
 	input[type="button"],
 	button,
 	.button {
-		background-color: /*#5a5a5a*/ red; /*muda a cor do botão*/
+		background-color: /*#5a5a5a*/ #8B0000; /*muda a cor do botão*/
 		color: /*#ffffff*/ white; /*muda a cor da letra do botao*/
+                position:relative;
+                right:-350px;
 	}
+        #button{
+                position:relative;
+                right:-850px;
+                top:-20px;
+        }
+        .button a{
+            position:relative;
+            right:-400px;
+        }
+        
 
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #676767;
+			background-color: /*#676767*/ white; /*muda a cor do botão quando o mouse passa em cima*/
 		}
 
 		input[type="submit"]:active,
@@ -1898,7 +1911,7 @@
 		max-width: 80%;
 		width: 20em;
 		padding: 1.5em;
-		text-transform: uppercase;
+		text-transfbuttorm: uppercase;
 		z-index: 10003;
 		display: none;
 	}
@@ -1957,7 +1970,7 @@
 				width: 3em;
 				height: 3em;
 				line-height: 3em;
-				display: block;
+				display: blockbutt;
 				position: absolute;
 				right: 0;
 				top: 0;
@@ -2401,8 +2414,8 @@
 		#footer input[type="button"],
 		#footer button,
 		#footer .button {
-			background-color: /*#5a5a5a*/ #8B0000;
-			color: /*#ffffff*/ white;
+			background-color: #5a5a5a;
+			color: #ffffff;
 		}
 
 			#footer input[type="submit"]:hover,

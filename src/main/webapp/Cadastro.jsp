@@ -23,7 +23,7 @@
 				<h1><strong><a href="index.jsp"> Mercado Vila Franca </a></strong> </h1>
 				<nav id="nav">
 					<ul>
-						<li><a href="index.jsp">Home</a></li>
+						<li><a href="Inicial.jsp">Home</a></li>
 						<li><a href="produtos.html">Produtos</a></li>
 						<li><a href="elements.html">Quem somos</a></li>
 					</ul>

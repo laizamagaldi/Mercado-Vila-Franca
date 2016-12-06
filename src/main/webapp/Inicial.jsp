@@ -37,9 +37,9 @@
 					<a href="Inicial.jsp" class="logo">Mercado Vila Franca</a>
 					<nav id="nav">
 						<a href="Inicial.jsp">Home</a>
-						<a href=".html">Login</a>
-                                                <a href=".html">Cadastro</a>
-						<a href=".html">Quem Somos</a>
+						<a href="login.jsp">Login</a>
+                                                <a href="Cadastro.jsp">Cadastro</a>
+						<a href="Identidade.jsp">Quem Somos</a>
 						<a class="butto" href= "#"><img src="images/carro.png" width="40" height="40" alt="" /></a>
 					</nav>
 				</div>
@@ -173,8 +173,7 @@
 			<!--<p class="button"><a href="#">Read More</a></p>-->
 		</div>
 	</div>
-                
-                <p class="button"><a href="#">Mais Produtos</a></p>
+                <input type="submit" value="Mais Produtos" id="button" />
 </div>
 		<!-- Footer -->
 			<section id="footer">
