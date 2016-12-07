@@ -37,7 +37,7 @@
 					<a href="Inicial.jsp" class="logo">Mercado Vila Franca</a>
 					<nav id="nav">
 						<a href="Inicial.jsp">Home</a>
-						<a href="login.jsp">Login</a>
+						<a href="Login.jsp">Login</a>
                                                 <a href="Cadastro.jsp">Cadastro</a>
 						<a href="Identidade.jsp">Quem Somos</a>
 						<a class="butto" href= "#"><img src="images/carro.png" width="40" height="40" alt="" /></a>
