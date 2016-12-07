@@ -24,8 +24,9 @@
   		<style>
   		.carousel-inner > .item > img,
   		.carousel-inner > .item > a > img {
-     	width: 70%;
+     	width: 100%;
       	margin: auto;
+        
   		}
   </style>
 	</head>
@@ -172,9 +173,11 @@
                         <h3>R$ 8,49</h3>
 			<!--<p class="button"><a href="#">Read More</a></p>-->
 		</div>
+                <ul class="actions">
+                    <li><input type="submit" value="Mais Produtos" id="button" /></li>
+                </ul>
 	</div>
-                <input type="submit" value="Mais Produtos" id="button" />
-</div>
+                
 		<!-- Footer -->
 			<section id="footer">
 				<div class="inner">
