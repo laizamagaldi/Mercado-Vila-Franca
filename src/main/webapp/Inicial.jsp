@@ -24,8 +24,9 @@
   		<style>
   		.carousel-inner > .item > img,
   		.carousel-inner > .item > a > img {
-     	width: 70%;
+     	width: 100%;
       	margin: auto;
+        
   		}
   </style>
 	</head>
@@ -37,8 +38,8 @@
 					<a href="Inicial.jsp" class="logo">Mercado Vila Franca</a>
 					<nav id="nav">
 						<a href="Inicial.jsp">Home</a>
-						<a href="login.jsp">Login</a>
-                                                <a href="Cadastro.jsp">Cadastro</a>
+						<a href="Login.jsp">Login</a>
+                                                <a href="CadastroNovo.jsp">Cadastro</a>
 						<a href="Identidade.jsp">Quem Somos</a>
 						<a class="butto" href= "#"><img src="images/carro.png" width="40" height="40" alt="" /></a>
 					</nav>
@@ -172,9 +173,11 @@
                         <h3>R$ 8,49</h3>
 			<!--<p class="button"><a href="#">Read More</a></p>-->
 		</div>
+                <ul class="actions">
+                    <li><input type="submit" value="Mais Produtos" id="button" /></li>
+                </ul>
 	</div>
-                <input type="submit" value="Mais Produtos" id="button" />
-</div>
+                
 		<!-- Footer -->
 			<section id="footer">
 				<div class="inner">
