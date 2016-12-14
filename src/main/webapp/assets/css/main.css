@@ -9,7 +9,7 @@
 
 #menu-wrapper
 {
-	background: /*#2F94A8*/ #1c1c1c; /* muda a cor de fundo dos produtos */
+	background: /*#2F94A8*/ #1c1c1c; /* muda a cor de fundo da barra de produtos */
 }
 
 #menu {
@@ -444,7 +444,7 @@
 		font-weight: 700;
 		height: 3.5em;
 		line-height: 6.65em;
-		padding: 0 3.25em;/*muda a largura do botao */
+		padding: 0 3.25em;/*muda a largura do botao*/
 		text-align: center;
 		text-decoration: none;
 		text-transform: uppercase;
@@ -473,7 +473,7 @@
 		font-weight: 700;
 		height: 3.5em;
 		line-height: 3.65em;
-		padding: 0 3.25em;/*muda a largura do botao */
+		padding: 0 2.00em;/*muda a largura do botao de "Mais produtos"*/
 		text-align: center;
 		text-decoration: none;
 		text-transform: uppercase;
@@ -555,12 +555,14 @@
 		color: /*#ffffff*/ white; /*muda a cor da letra do botao*/
                 position:relative;
                 right:-350px;
+                text-align: center;
 	}
         
         #button{
                 position:relative;
                 right:-850px;
-                top:-20px;
+                top: 20px;
+                
         }
         .button a{
             position:relative;
@@ -573,7 +575,7 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: /*#676767*/ white; /*muda a cor do botão quando o mouse passa em cima*/
+			background-color: /*#676767*/ black; /*muda a cor do botão quando o mouse passa em cima*/
 		}
 
 		input[type="submit"]:active,
@@ -1775,7 +1777,7 @@
 			position: absolute;
 			top: 0;
 			color: /*#e5474b*/ #CD0000;
-			font-size: 1.75em;
+			font-size: /*1.75*/2.00em; /*Muda o tamanho da fonte do logo "M..V.."*/
 			text-transform: none;
 			font-weight: normal;
 			padding: 0;
@@ -1796,7 +1798,7 @@
 			text-decoration: none;
 			text-transform: uppercase;
 			font-weight: 700;
-			font-size: .85em;
+			font-size: .90em; /*Muda o tamanho da fonte do Home*/
 		}
 
 			#header a:hover {
