@@ -57,7 +57,8 @@
        
   </ul>
 </nav>
-       
+
+        
 <display:table name="${sessionScope.currentSessionClie}" class="dataTable">
         <display:column property="nome" />
         <display:column property="login" />
@@ -67,7 +68,6 @@
         <display:column title="Deletar" href="DeletaCliente" paramId="login" paramProperty="login"><img src="delete.png" title="Apagar"/></display:column>
     </display:table>
 
-       
    
     
     

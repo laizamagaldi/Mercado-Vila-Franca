@@ -41,7 +41,7 @@
 				</div>
 			</section>
 
-		<!-- Footer -->
+		<!-- Footer -->No limit
 			<footer id="footer">
                             <div class="container">
                                     <ul class="icons">

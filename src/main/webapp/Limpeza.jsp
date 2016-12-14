@@ -1,26 +1,14 @@
+<%-- 
+    Document   : Limpeza
+    Created on : 07/12/2016, 14:09:04
+    Author     : aluno
+--%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="Entidade.Cliente"%>
-<!DOCTYPE HTML>
-<!--
-	Introspect by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
-<%
-    response.setHeader("Cache-Control","no-cache"); //Forces caches to obtain a new copy of the page from the origin server
-    response.setHeader("Cache-Control","no-store"); //Directs caches not to store the page under any circumstance
-    response.setDateHeader("Expires", 0); //Causes the proxy cache to see the page as "stale"
-    response.setHeader("Pragma","no-cache"); //HTTP 1.0 backward compatibility
-    Cliente usuario = (Cliente) session.getAttribute("currentSessionClie");
-    if (null == usuario) {
-        request.setAttribute("Error", "Sessao finalizada. Por favor, faça seu login.");
-        RequestDispatcher rd = request.getRequestDispatcher("PaginaInicial.jsp");
-        rd.forward(request, response);
-    }
-%>
+<!DOCTYPE html>
 <html>
 	<head>
-		<title>Mercado Vila Franca</title>
+		<title>Mercado Vila Franca - Limpeza</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -44,22 +32,15 @@
 					<a href="Inicial.jsp" class="logo">Mercado Vila Franca</a>
 					<nav id="nav">
 						<a href="Inicial.jsp">Home</a>
-						<a href="Atualizar.jsp">Meus Dados</a>
+						<a href="Login.jsp">Login</a>
+                                                <a href="Cadastro.jsp">Cadastro</a>
 						<a href="Identidade.jsp">Quem Somos</a>
 						<a class="butto" href= "#"><img src="images/carro.png" width="40" height="40" alt="" /></a>
-                                                <a href="#" class="bem"> Bem vindo(a), <%=usuario.getNome()%>! </a>
-                                                <form action="Logout" method="post"> <input type="submit" name="button little" value="Sair"/> </a>
-                                                </form>
-                                                       </nav>
+					</nav>
 				</div>
 			</header>
 			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
- <!-- Banner -->
-        
-        <br />
-       
-         
-  
+
 		<!-- Banner -->
 <div class="container">
   <br>
@@ -75,19 +56,16 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="images/mercado1.jpg" alt="Chania" width="460" height="345">
+        <img src="images/tv1.jpg" alt="Chania" width="460" height="345">
       </div>
-
-      <div class="item">
-        <img src="images/molhos.jpg" alt="Chania" width="460" height="345">
+        <div class="item">
+        <img src="images/tv2.jpg" alt="Chania" width="460" height="345">
       </div>
-   
-      <div class="item">
-        <img src="images/frios.jpg" alt="Flower" width="460" height="345">
+         <div class="item">
+        <img src="images/tv4.jpg" alt="Chania" width="460" height="345">
       </div>
-
-      <div class="item">
-        <img src="images/comida.jpg" alt="Flower" width="460" height="345">
+         <div class="item">
+        <img src="images/tv5.jpg" alt="Chania" width="460" height="345">
       </div>
     </div>
 
@@ -116,8 +94,7 @@
 				<div id="menu-wrapper">
 						<div id="menu" class="container">
 								<ul>
-										<li><a href="#">Limpeza</a></li>
-										<li><a href="#">Higiene</a></li>
+                                                                                <li><a href="#">Higiene</a></li>
 										<li><a href="#">Alimentação</a></li>
 										<li><a href="#">Frios</a></li>
 										<li><a href="#">Carnes</a></li>
@@ -146,9 +123,7 @@
 
 
 
-
-
-
+           
 	<div id="featured-content">
 		<div id="column1">
 			<h2>Detergente</h2>
@@ -163,27 +138,65 @@
 			<!--<p class="button"><a href="#">Read More</a></p>-->
 		</div>
 		<div id="column3">
-			<h2>Danone</h2>
-                        <a href="Inicial.jsp"><img src="images/danone.png" width="300" height="300" alt="" /></a>
+			<h2>Bombril</h2>
+                        <a href="Inicial.jsp"><img src="images/bombril.png" width="300" height="300" alt="" /></a>
                         <h3>R$ 3,69</h3>
 			<!--<p class="button"><a href="#">Read More</a></p>-->
 		</div></br>
                 <div id="column1">
-			<h2>Rexona</h2>
-			<a href="Inicial.jsp"><img src="images/rexona.png" width="300" height="300" alt="" /></a>
-			<h3>R$ 5,99</h3>
+			<h2>Limpex</h2>
+			<a href="Inicial.jsp"><img src="images/oi.jpg" width="300" height="300" alt="" /></a>
+			<h3>R$ 2,99</h3>
 			<!--<p class="button"><a href="#">Comprar</a></p>-->
 		</div>
 		<div id="column2">
-			<h2>Pit Stop</h2>
-                        <a href="Inicial.jsp"><img src="images/biscoito.png" width="300" height="300" alt="" /></a>
+			<h2>Esponja</h2>
+                        <a href="Inicial.jsp"><img src="images/bobesponja.png" width="300" height="300" alt="" /></a>
 			<h3>R$ 3,29</h3>
 			<!--<p class="button"><a href="#">Read More</a></p>-->
 		</div>
 		<div id="column3">
-			<h2>Lasanha</h2>
-                        <a href="Inicial.jsp"><img src="images/lasanha.png" width="300" height="300" alt="" /></a>
-                        <h3>R$ 8,49</h3>
+			<h2>Sacola de Lixo</h2>
+                        <a href="Inicial.jsp"><img src="images/sacola.png" width="300" height="300" alt="" /></a>
+                        <h3>R$ 1,49</h3>
+			<!--<p class="button"><a href="#">Read More</a></p>-->
+		</div>
+               
+                <div id="column1">
+			<h2>Desinfetante</h2>
+                        <a href="Inicial.jsp"><img src="images/desin.png" width="300" height="300" alt="" /></a>
+			<h3>R$ 2,29</h3>
+			<!--<p class="button"><a href="#">Read More</a></p>-->
+		</div>
+		<div id="column2">
+			<h2>Luvas de Borracha</h2>
+                        <a href="Inicial.jsp"><img src="images/luva.jpg" width="300" height="300" alt="" /></a>
+                        <h3>R$ 1,49</h3>
+			<!--<p class="button"><a href="#">Read More</a></p>-->
+		</div>
+                <div id="column3">
+			<h2>Sabão</h2>
+                        <a href="Inicial.jsp"><img src="images/sabao.jpg" width="300" height="300" alt="" /></a>
+			<h3>R$ 4,29</h3>
+			<!--<p class="button"><a href="#">Read More</a></p>-->
+		</div>
+               
+                 <div id="column1">
+			<h2>Limpa Vidro</h2>
+                        <a href="Inicial.jsp"><img src="images/limpav.jpeg" width="300" height="300" alt="" /></a>
+                        <h3>R$ 4,49</h3>
+			<!--<p class="button"><a href="#">Read More</a></p>-->
+		</div>
+                <div id="column2">
+			<h2>Lustra Móveis</h2>
+                        <a href="Inicial.jsp"><img src="images/lustra.jpg" width="300" height="300" alt="" /></a>
+                        <h3>R$ 3,49</h3>
+			<!--<p class="button"><a href="#">Read More</a></p>-->
+		</div>
+                <div id="column3">
+			<h2>Vanish</h2>
+                        <a href="Inicial.jsp"><img src="images/vanish.png" width="300" height="300" alt="" /></a>
+			<h3>R$ 18,49</h3>
 			<!--<p class="button"><a href="#">Read More</a></p>-->
 		</div>
 	</div>
@@ -192,27 +205,7 @@
 		<!-- Footer -->
 			<section id="footer">
 				<div class="inner">
-					<header>
-						<h2>Entre em Contato Conosco</h2>
-					</header>
-					<form method="post" action="#">
-						<div class="field half first">
-							<label for="name">Nome</label>
-							<input type="text" name="name" id="name" />
-						</div>
-						<div class="field half">
-							<label for="email">Email</label>
-							<input type="text" name="email" id="email" />
-						</div>
-						<div class="field">
-							<label for="message">Mensagem</label>
-							<textarea name="message" id="message" rows="6"></textarea>
-						</div>
-						<ul class="actions">
-							<li><input type="submit" value="Enviar Mensagem" class="alt" /></li>
-						</ul>
-					</form>
-
+					
 					<div class="copyright">
 						&copy; Untitled Design: <a href="https://templated.co/">TEMPLATED</a>. Images <a href="https://www.google.com.br/imghp?hl=pt-BR&tab=wi&ei=5YU9WIiKDYK5wgTJlqrwBA&ved=0EKouCBUoAQ">Google Imagens</a>. </br> Equipe de Produção: <a href="https://www.facebook.com/giovana.freitas.33?fref=ts">Giovana Freitas</a>, <a href="https://www.facebook.com/profile.php?id=100004118016430&fref=ts">Isadora Oliveira</a>, <a href="https://www.facebook.com/jessica.sales.5055?ref=ts&fref=ts">Jéssica Sales</a> e <a href="https://www.facebook.com/laiza.magaldi?fref=ts">Laíza Magaldi</a>
 					</div>
@@ -227,5 +220,3 @@
 
 	</body>
 </html>
-
-       

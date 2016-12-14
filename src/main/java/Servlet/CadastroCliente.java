@@ -125,7 +125,7 @@ public class CadastroCliente extends HttpServlet {
             EnderecoDAO edao = new EnderecoDAO();
             edao.addEndereco(end);
             
-            response.sendRedirect("CadastroRealizado.jsp");
+            response.sendRedirect("Login.jsp");
             
         } finally {
             out.close();
