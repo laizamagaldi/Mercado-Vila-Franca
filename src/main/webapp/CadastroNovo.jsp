@@ -9,10 +9,11 @@
 <html>
 	<head>
 		<title>Mercado Vila Franca</title>
-		<meta charset="utf-8" />
+                <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/Cadastro.css" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
   		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -24,7 +25,7 @@
   		}
   </style>
 	</head>
-	<body>
+	<body id="footer">
 
 		<!-- Header -->
 			<header id="header">
@@ -47,135 +48,158 @@
 					<header>
 						<h2>Cadastre-se</h2>
 					</header>
-                                    <form method="post" action="Login">
+                                    <form action="CadastroCliente" method="post">
 					<table>
 						<tr>
 							<td>
-							<label for="name">Nome</label>
-							<input type="text" name="un" id="login" />
+							Nome
+							<input type="text" name="nomeCliente" />
 							</td>
 							<td>
-							<label for="senha">Email</label>
-							<input type="email" name="pw" id="senha" />
+                                                        Email   
+							<input type="email" name="emailCliente" />
 						
 							</td>
 						</tr>
                                                 <tr>
 							<td>
 								
-							<label for="senha">Data de Nascimento</label>
-							<input type="text" name="pw" id="senha" />
+							Data de Nascimento
+							<input type="text" name="DataNasc" />
 						
 							</td>
 						
 							<td>
 								
-							<label for="senha">CPF</label>
-							<input type="text" name="pw" id="senha" />
+							CPF
+							<input type="text" name="cpfCliente" maxlength="11"/>
 						
 							</td>
 						</tr>
                                                 <tr>
 							<td>
 								
-							<label for="senha">RG</label>
-							<input type="text" name="pw" id="senha" />
+							RG
+							<input type="text" name="rgCliente" maxlength="9"/>
 						
 							</td>
 						
 							<td>
 								
-							<label for="senha">Sexo</label>
-							<input type="text" name="pw" id="senha" />
+							Sexo
+							<input type="text" name="sexoCliente" />
 						
 							</td>
 						</tr>
                                                 <tr>
 							<td>
 								
-							<label for="senha">Rua</label>
-							<input type="text" name="pw" id="senha" />
+							Rua
+							<input type="text" name="ruaCliente"  />
 						
 							</td>
 						
 							<td>
 								
-							<label for="senha">Numero</label>
-							<input type="text" name="pw" id="senha" />
+							Numero
+							<input type="text" name="numeroCliente" />
 						
 							</td>
 						</tr>
                                                  <tr>
 							<td>
 								
-							<label for="senha">Complemento</label>
-							<input type="text" name="pw" id="senha" />
+							Complemento
+							<input type="text" name="complementoCliente" />
 						
 							</td>
 						
 							<td>
 								
-							<label for="senha">Bairro</label>
-							<input type="text" name="pw" id="senha" />
+							Bairro
+							<input type="text" name="bairroCliente" />
 						
 							</td>
 						</tr>
                                                  <tr>
 							<td>
 								
-							<label for="senha">Cidade</label>
-							<input type="text" name="pw" id="senha" />
+							Cidade
+							<input type="text" name="cidadeCliente" />
 						
 							</td>
 						
 							<td>
 								
-							<label for="senha">Cep</label>
-							<input type="text" name="pw" id="senha" />
+							DDD
+							<input type="text" name="telefone2" />
 						
 							</td>
 						</tr>
                                                  <tr>
 							<td>
 								
-							<label for="senha">Estado</label>
-							<input type="text" name="pw" id="senha" />
+							Estado
+							<input type="text" name="estadoCliente" />
 						
 							</td>
 						
 							<td>
 								
-							<label for="senha">DDD</label>
-							<input type="text" name="pw" id="senha" />
+							Telefone
+							<input type="text" name="telefone1" />
 						
 							</td>
 						</tr>
                                                  <tr>
 							<td>
 								
-							<label for="senha">Telefone</label>
-							<input type="text" name="pw" id="senha" />
+							Cep
+							<input type="text" name="cepCliente" />
 						
 							</td>
 						
-							<td>
-								
-							<label for="senha">Numero</label>
-							<input type="text" name="pw" id="senha" />
-						
-							</td>
 						</tr>
                                               
                                                 </div>
+						
+					
+				</table>
+                                        <header>
+						<h2>Dados de acesso</h2>
+					</header>
+                                   <div class="tabela">
+					<table>
 						<tr>
 							<td>
+							Login
+							<input type="text" name="loginCliente" />
+							</td>
+                                                </tr>
+                                                <tr>
+							<td>
+							Senha
+							<input type="password" name="senhaCliente" />
+						
+							</td>
+                                                </tr>
+                                                <tr>
+							<td>
+								
+							Confirmar Senha
+							<input type="password" name="repsenhaCliente" />
+						
+							</td>
+						</tr>
+                                                <tr>
+							<td>
 						<ul class="actions">
-							<li><input type="submit" value="Entrar" class="alt" /></li>
+							<li><input type="submit" value="Cadastrar" class="alt" /></li>
 						</ul>
 							</td>
 						</tr>
-					
-				</table>
+                                        </table>
+                                   </div>
                                        </form>
 				</div>
 			</section>

@@ -53,21 +53,21 @@
 
 #column1 {
 	float: left;
-	width: 200px;
-	margin-right: 30px;
-	font-size: 10px;
+	width: 20%;
+	margin-right: 30%;
+	font-size: 10%;
         text-align: center;
 }
 
 #column2 {
 	float: left;
-	width: 280px;
+	width: 28%;
         text-align: center;
 }
 
 #column3 {
 	float: right;
-	width: 260px;
+	width: 26%;
         text-align: center;
 }
 
@@ -451,6 +451,7 @@
 		white-space: nowrap;
              
 	}	
+        
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
@@ -555,6 +556,7 @@
                 position:relative;
                 right:-350px;
 	}
+        
         #button{
                 position:relative;
                 right:-850px;
@@ -1757,7 +1759,11 @@
 				}
 
 			}
-
+                        #header .bem {
+                        font-family: 'Garamond', cursive;
+			display: inline-block;
+			
+                        }
 		#header .logo {
 			font-family: 'Pacifico', cursive;
 			display: inline-block;

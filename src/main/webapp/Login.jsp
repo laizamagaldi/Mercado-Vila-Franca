@@ -29,7 +29,7 @@
   		}
   </style>
 	</head>
-	<body>
+	<body id="footer">
 
 		<!-- Header -->
 			<header id="header">

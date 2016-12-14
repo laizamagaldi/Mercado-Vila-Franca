@@ -40,7 +40,7 @@ public class DeletaCliente extends HttpServlet {
                                   
             clientedao.deleteCliente(cliente.getLogin());
             
-            Login == 0
+            /*Login == 0;*/
             
             List<Cliente> clientes = clientedao.listaCliente();
             request.getSession(true).setAttribute("clientes", clientes);
