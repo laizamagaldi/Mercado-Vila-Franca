@@ -5,7 +5,49 @@
 	Introspect by TEMPLATED
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*//** MENU */
+*/
+h1 {
+    text-align: center;
+}
+/*Área de busca no site*/
+#divBusca{
+  background-color:white;
+  border:solid 2px #8B0000;
+  border-radius:10px;
+  width:450px;
+  height:38px;
+  float: left;
+}
+
+#txtBusca{
+  float:left;
+  background-color:transparent;
+  padding-left: 5px; 
+  font-size:18px;
+  border:none;
+  height:32px;
+  width:449px;
+}
+
+
+/*#btnBusca*/
+#but{
+  border:none;
+  float:left;
+  height:35px;
+  border-radius:0 7px 7px 0;
+  width:70px;
+  font-weight:bold;
+  font-size: 18px;
+  color: #FFF;
+  background:#8B0000;
+  margin-top: -30px;
+  margin-left: 452px;
+}
+
+/**/
+
+/** MENU */
 
 #menu-wrapper
 {
@@ -1771,7 +1813,7 @@
 			position: absolute;
 			top: 0;
 			color: /*#e5474b*/ #CD0000;
-			font-size: /*1.75*/2.00em; /*Muda o tamanho da fonte do logo "M..V.."*/
+			font-size: /*1.75*/2.30em; /*Muda o tamanho da fonte do logo "M..V.."*/
 			text-transform: none;
 			font-weight: normal;
 			padding: 0;
@@ -1792,7 +1834,7 @@
 			text-decoration: none;
 			text-transform: uppercase;
 			font-weight: 700;
-			font-size: .90em; /*Muda o tamanho da fonte do Home*/
+			font-size: .99em; /*Muda o tamanho da fonte do Home*/
 		}
 
 			#header a:hover {

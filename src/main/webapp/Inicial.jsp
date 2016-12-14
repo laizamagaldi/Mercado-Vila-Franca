@@ -26,7 +26,7 @@
   		.carousel-inner > .item > a > img {
      	width: 100%;
       	margin: auto;
-        
+        height: 500px;
   		}
   </style>
 	</head>
@@ -105,7 +105,7 @@
 								<ul>
 										<li><a href="#">Limpeza</a></li>
 										<li><a href="#">Higiene</a></li>
-										<li><a href="#">Alimentação</a></li>
+										<li><a href="Alimentos.jsp">Alimentação</a></li>
 										<li><a href="#">Frios</a></li>
 										<li><a href="#">Carnes</a></li>
 								</ul>
